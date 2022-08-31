@@ -7,11 +7,15 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="414dp"
+        android:layout_height="850dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Space
             android:layout_width="match_parent"
@@ -89,12 +93,12 @@
                 android:layout_width="244dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
                 android:background="@drawable/bordesredonditos"
+                android:ems="10"
+                android:gravity="center"
                 android:hint="Nombre"
-                android:textColorHint="#046D67"
-                android:gravity="center"/>
+                android:inputType="textPersonName"
+                android:textColorHint="#046D67" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -169,7 +173,7 @@
             android:layout_width="match_parent"
             android:layout_height="12dp" />
 
-        <!--Usuario input -->
+        <!--Usuario label -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -182,11 +186,74 @@
                 android:layout_weight="1" />
 
             <TextView
-                android:id="@+id/Usuario"
+                android:id="@+id/UsuarioLabel"
                 android:layout_width="366dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Usuario"
+                android:text="Nombre de usuario"
+                android:textColor="#F38630"
+                android:textSize="2mm" />
+
+        </LinearLayout>
+
+        <!--Usuario input -->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1" />
+
+            <EditText
+
+                android:id="@+id/UsuarioIn"
+                android:layout_width="244dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bordesredonditos"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nombre de usuario"
+                android:inputType="textPersonName"
+                android:textColorHint="#046D67" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!--Correo label -->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/CorreoLabel"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Correo eléctronico"
                 android:textColor="#F38630"
                 android:textSize="2mm" />
 
@@ -196,6 +263,272 @@
             android:layout_width="match_parent"
             android:layout_height="12dp" />
 
+        <!--Usuario input -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1" />
+
+            <EditText
+
+                android:id="@+id/CorreoIn"
+                android:layout_width="244dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bordesredonditos"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Correo eléctronico"
+                android:inputType="textPersonName"
+                android:textColorHint="#046D67" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+        <!--Contraseña label -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ContraseñaLabel"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contraseña"
+                android:textColor="#F38630"
+                android:textSize="2mm" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!--Contraseña input -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1" />
+
+            <EditText
+
+                android:id="@+id/ContraseñaIn"
+                android:layout_width="244dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bordesredonditos"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Contraseña"
+                android:inputType="textPersonName"
+                android:textColorHint="#046D67" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+        <!--Número de teléfono label -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/NumLabel"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Número de teléfono"
+                android:textColor="#F38630"
+                android:textSize="2mm" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!--Número de teléfono input -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1" />
+
+            <EditText
+
+                android:id="@+id/NumIn"
+                android:layout_width="244dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bordesredonditos"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Número de teléfono"
+                android:inputType="textPersonName"
+                android:textColorHint="#046D67" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!--Paciente/Especialista label -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/PELabel"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Se usará la aplicación como:"
+                android:textColor="#F38630"
+                android:textSize="2mm" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!--Paciente/Especialista input -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/PacienteIn"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:colorAccent="#046D67"
+                    android:minHeight="48dp"
+                    android:text="Paciente"
+                    android:textColor="#B3B3B3"
+                    android:textSize="2.5mm" />
+
+                <RadioButton
+                    android:id="@+id/EspecialistaIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:colorAccent="#046D67"
+                    android:minHeight="48dp"
+                    android:onClick="TipoUsuarioRegistro"
+                    android:text="Especialista"
+                    android:textColor="#B3B3B3"
+                    android:textSize="2.5mm" />
+
+            </RadioGroup>
+
+            <Space
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="34dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Registrar"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/botones"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
